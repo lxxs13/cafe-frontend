@@ -1,0 +1,59 @@
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-column-data {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+
+.span-name-coffee {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+.button-price {
+  background-color: #bee3cc;
+  border-radius: 4px;
+  color: #1b1d1f;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.div-raiting-available {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.div-raiting {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.span-rating {
+  color: #ffffff;
+}
+
+.span-votes {
+  color: #6f757c;
+}
+
+.span-available {
+  color: #ed735d;
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+button {
+    border: none;
+}
+
+img {
+    border-radius: 8px;
+}

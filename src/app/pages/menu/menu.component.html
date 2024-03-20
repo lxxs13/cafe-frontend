@@ -1,0 +1,31 @@
+<div class="div-container">
+    <div class="div-menu">
+        <span class="span-title">Our Collection</span>
+        <p class="p-introduction">
+            Introducing our Coffee Collection, a selection of unique coffees from
+            different roast types and origins, expertly roasted in small batches
+            and shipped fresh weekly.
+        </p>
+        <div class="div-options">
+            <div class="div-options">
+                <input type="radio" id="allProducts" name="options" class="option-radio" [(ngModel)]="selectedOption"
+                    value="allProducts" (change)="filterCoffeList()" />
+                <label for="allProducts" class="button-option">
+                    All Products
+                </label>
+
+                <input type="radio" id="availableNow" name="options" class="option-radio" [(ngModel)]="selectedOption"
+                    value="availableNow" (change)="filterCoffeList()" />
+                <label for="availableNow" class="button-option">
+                    Available Now
+                </label>
+            </div>
+        </div>
+
+        <div class="div-list-coffees">
+            <div *ngFor="let item of coffeeListToDisplay" class="item">
+                <app-card [coffeeData]="item"></app-card>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="main">
+    <div class="card-content">
+        <img src={{coffeeData.image}} alt="" />
+        <div class="div-column-data">
+            <span class="span-name-coffee">{{coffeeData.name}}</span>
+            <button class="button-price">{{coffeeData.price}}</button>
+        </div>
+
+        <div>
+            <div>
+                <div class="div-raiting-available">
+                    <div class="div-raiting">
+                        <img src="assets/{{ (+!coffeeData.rating > 0) ? 'Star.svg' : 'Star_fill.svg' }}"
+                            alt="{{ (!coffeeData.votes && +!coffeeData.votes > 0) ? 'Star' : 'Star_Fill' }}" />
+                        &nbsp;
+                        <span class="span-rating">
+                            {{coffeeData.rating && +coffeeData.rating > 0
+                            ? coffeeData.rating + " "
+                            : " "}}
+                        </span>
+                        &nbsp;
+                        <span class="span-votes">
+                            {{coffeeData.votes && +coffeeData.votes > 0
+                            ? " (" + coffeeData.votes + " votes)"
+                            : " No rating"}}
+                        </span>
+                    </div>
+                    <div>
+                        <span class="span-available">
+                            {{coffeeData.available ? "" : "Sold out"}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
